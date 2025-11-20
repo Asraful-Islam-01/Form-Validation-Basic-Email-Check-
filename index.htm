@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Validation - Email Check</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="form-container">
+        <h2>User Registration Form</h2>
+        <form id="Registration Form">
+
+            <!-- Name Input Section -->
+             <div class="form-group">
+                <label for="name">Full Name:</label>
+                <input type="text" id="Name" placeholder="Enter Your Full Name" required>
+                <div class="error-message" id="nameError">Name must be al least two characters</div>
+                <div class="success-message" id="nameSuccess">✔ Valid Name</div>
+             </div>
+
+             <!-- Email Input Section -->
+              <div class="form-group">
+                <label for="email">Email Address:</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email">
+                <div class="error-message" id="emailError">Please enter a valid email address</div>
+                <div class="success-message" id="emailSuccess">✔ Valid Email</div>
+              </div>
+              
+              <!-- Submit Button -->
+               <button type="submit">Submit</button>
+        </form>
+
+        <!-- Success Message Shown After Submission -->
+         <div class="sumission-success" id="sumitSuccess">Form sumitted successfully🎉</div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
