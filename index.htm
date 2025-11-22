@@ -9,12 +9,12 @@
 <body>
     <div class="form-container">
         <h2>User Registration Form</h2>
-        <form id="Registration Form">
+        <form id="RegistrationForm">
 
             <!-- Name Input Section -->
              <div class="form-group">
                 <label for="name">Full Name:</label>
-                <input type="text" id="Name" placeholder="Enter Your Full Name" required>
+                <input type="text"  id="name" name="name" placeholder="Enter Your Full Name" required>
                 <div class="error-message" id="nameError">Name must be al least two characters</div>
                 <div class="success-message" id="nameSuccess">✔ Valid Name</div>
              </div>
@@ -22,7 +22,7 @@
              <!-- Email Input Section -->
               <div class="form-group">
                 <label for="email">Email Address:</label>
-                <input type="email" id="email" name="email" placeholder="Enter your email">
+                <input type="email" id="email" name="email"  placeholder="Enter your email">
                 <div class="error-message" id="emailError">Please enter a valid email address</div>
                 <div class="success-message" id="emailSuccess">✔ Valid Email</div>
               </div>
@@ -32,7 +32,7 @@
         </form>
 
         <!-- Success Message Shown After Submission -->
-         <div class="submission-success" id="sumitSuccess">Form sumitted successfully🎉</div>
+         <div class="submission-success" id="submissionSuccess">Form sumitted successfully🎉</div>
     </div>
     <script src="script.js"></script>
 </body>
